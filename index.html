@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        .card {
+            background-color: #eee;
+            width: 222px;
+        }
+
+        .card:hover {
+            transition: 0.7s;
+            width: 250px;
+            background-color: aquamarine;
+        }
+
+        .pictures {
+            background-image: url("images/library1.jpg1.jpg");
+        }
+
+        .dark {
+            background-color: black;
+            transition: 0.5s;
+            /* color: white; */
+        }
+
+        .active {
+            background-color: blue;
+            /* color: white; */
+        }
+
+        .btns-color {
+            background-color: #eee;
+            border: none;
+        }
+
+        .mode {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: none;
+        }
+
+        svg {
+            width: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form class=" w-50 m-auto">
+        <button class=" mode m-auto mt-2 ms-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                    d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zm64 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z" />
+            </svg>
+        </button>
+        <div class="d-flex">
+            <input class="js-input form-control w-100 mt-3" placeholder="Search..." type="search">
+
+        </div>
+
+
+        <!-- <div class="pictures">
+            <h1>all</h1>
+
+        </div> -->
+        <!-- <select id="js-select" class="form-select mt-5 mb-5">
+            <option value="sorting" selected disabled>Sorting</option>
+            <option value="name">Name</option>
+            <option value="years">Years</option>
+            <option value="pages">Pages</option>
+            <option value="languages">Languages</option>
+        </select> -->
+    </form>
+    <h1 class="mt-5 text-center text-success">Choose yours</h1>
+    <div class="text-center">
+        <div class="btn-group mt-1 w-75 m-auto text-center js-sort">
+            <button type="button" class="btns-color btn  js-name">Sort by Name</button>
+            <button type="button" class="btns-color btn  js-year">Sort by Year</button>
+            <button type="button" class="btns-color btn  js-page">Sort by Page</button>
+            <button type="button" class="btns-color btn  js-languages">Sort by Languages</button>
+        </div>
+    </div>
+    <div class="js-list d-flex flex-wrap justify-content-center mt-5 m-auto">
+
+    </div>
+
+    <script src="./js/books.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
